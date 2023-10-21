@@ -6,7 +6,7 @@
 
 /**
  * @file
- * Implements Oscillator Switch meta strategy.
+ * Implements MA Cross meta strategy.
  */
 
 // Includes the main code.
