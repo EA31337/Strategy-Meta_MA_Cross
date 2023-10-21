@@ -22,10 +22,10 @@ enum ENUM_STG_META_MA_CROSS_TYPE {
 
 // User input params.
 INPUT2_GROUP("Meta MA Cross strategy: main params");
-INPUT2 ENUM_STRATEGY Meta_MA_Cross_Strategy_Main = STRAT_OSCILLATOR;                // Main strategy
-INPUT2 ENUM_STRATEGY Meta_MA_Cross_Strategy_MA_Cross = STRAT_CHAIKIN;               // Strategy on MA cross
-INPUT2 ENUM_STG_META_MA_CROSS_TYPE Meta_MA_Cross_Type = STG_META_MA_CROSS_TYPE_MA;  // Indicator MA type
-INPUT2 ENUM_TIMEFRAMES Meta_MA_Cross_Tf = PERIOD_D1;                                // Timeframe for MA
+INPUT2 ENUM_STRATEGY Meta_MA_Cross_Strategy_Main = STRAT_RSI;                          // Main strategy
+INPUT2 ENUM_STRATEGY Meta_MA_Cross_Strategy_MA_Cross = STRAT_MA_TREND;                 // Strategy on MA cross
+INPUT2 ENUM_STG_META_MA_CROSS_TYPE Meta_MA_Cross_Type = STG_META_MA_CROSS_TYPE_FRAMA;  // Indicator MA type
+INPUT2 ENUM_TIMEFRAMES Meta_MA_Cross_Tf = PERIOD_D1;                                   // Timeframe for MA
 INPUT2_GROUP("Meta MA Cross strategy: common params");
 INPUT2 float Meta_MA_Cross_LotSize = 0;                // Lot size
 INPUT2 int Meta_MA_Cross_SignalOpenMethod = 0;         // Signal open method
