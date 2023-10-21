@@ -40,74 +40,74 @@ INPUT2 int Meta_MA_Cross_PriceStopMethod = 0;          // Price limit method
 INPUT2 float Meta_MA_Cross_PriceStopLevel = 2;         // Price limit level
 INPUT2 int Meta_MA_Cross_TickSwitchMethod = 32;        // Tick filter method (0-255)
 INPUT2 float Meta_MA_Cross_MaxSpread = 4.0;            // Max spread to trade (in pips)
-INPUT2 short Meta_MA_Cross_Shift = 0;                  // Shift
+INPUT2 short Meta_MA_Cross = 0;                        // Shift
 INPUT2 float Meta_MA_Cross_OrderCloseLoss = 200;       // Order close loss
 INPUT2 float Meta_MA_Cross_OrderCloseProfit = 200;     // Order close profit
 INPUT2 int Meta_MA_Cross_OrderCloseTime = 2880;        // Order close time in mins (>0) or bars (<0)
 INPUT_GROUP("Meta MA Cross Shift strategy: AMA indicator params");
-INPUT int Meta_MA_Cross_Shift_Indi_AMA_InpPeriodAMA = 20;                              // AMA period
-INPUT int Meta_MA_Cross_Shift_Indi_AMA_InpFastPeriodEMA = 4;                           // Fast EMA period
-INPUT int Meta_MA_Cross_Shift_Indi_AMA_InpSlowPeriodEMA = 30;                          // Slow EMA period
-INPUT int Meta_MA_Cross_Shift_Indi_AMA_InpShiftAMA = 4;                                // AMA shift
-INPUT int Meta_MA_Cross_Shift_Indi_AMA_Shift = 0;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_AMA_Shift2 = 10;                                    // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_AMA_SourceType = IDATA_BUILTIN;  // Source type
+INPUT int Meta_MA_Cross_Indi_AMA_InpPeriodAMA = 20;                              // AMA period
+INPUT int Meta_MA_Cross_Indi_AMA_InpFastPeriodEMA = 4;                           // Fast EMA period
+INPUT int Meta_MA_Cross_Indi_AMA_InpSlowPeriodEMA = 30;                          // Slow EMA period
+INPUT int Meta_MA_Cross_Indi_AMA_InpShiftAMA = 4;                                // AMA shift
+INPUT int Meta_MA_Cross_Indi_AMA_Shift = 0;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_AMA_Shift2 = 10;                                    // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_AMA_SourceType = IDATA_BUILTIN;  // Source type
 INPUT_GROUP("Meta MA Cross Shift strategy: DEMA indicator params");
-INPUT int Meta_MA_Cross_Shift_Indi_DEMA_Period = 25;                                    // Period
-INPUT int Meta_MA_Cross_Shift_Indi_DEMA_MA_Shift = 6;                                   // MA Shift
-INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Shift_Indi_DEMA_Applied_Price = PRICE_TYPICAL;   // Applied Price
-INPUT int Meta_MA_Cross_Shift_Indi_DEMA_Shift = 0;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_DEMA_Shift2 = 10;                                    // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_DEMA_SourceType = IDATA_BUILTIN;  // Source type
+INPUT int Meta_MA_Cross_Indi_DEMA_Period = 25;                                    // Period
+INPUT int Meta_MA_Cross_Indi_DEMA_MA_Shift = 6;                                   // MA Shift
+INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Indi_DEMA_Applied_Price = PRICE_TYPICAL;   // Applied Price
+INPUT int Meta_MA_Cross_Indi_DEMA_Shift = 0;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_DEMA_Shift2 = 10;                                    // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_DEMA_SourceType = IDATA_BUILTIN;  // Source type
 INPUT_GROUP("Meta MA Cross Shift strategy: FrAMA indicator params");
-INPUT int Meta_MA_Cross_Shift_Indi_FrAMA_Period = 10;                                    // Period
-INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Shift_Indi_FrAMA_Applied_Price = PRICE_MEDIAN;    // Applied Price
-INPUT int Meta_MA_Cross_Shift_Indi_FrAMA_MA_Shift = 0;                                   // MA Shift
-INPUT int Meta_MA_Cross_Shift_Indi_FrAMA_Shift = 0;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_FrAMA_Shift2 = 10;                                    // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_FrAMA_SourceType = IDATA_BUILTIN;  // Source type
+INPUT int Meta_MA_Cross_Indi_FrAMA_Period = 10;                                    // Period
+INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Indi_FrAMA_Applied_Price = PRICE_MEDIAN;    // Applied Price
+INPUT int Meta_MA_Cross_Indi_FrAMA_MA_Shift = 0;                                   // MA Shift
+INPUT int Meta_MA_Cross_Indi_FrAMA_Shift = 0;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_FrAMA_Shift2 = 10;                                    // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_FrAMA_SourceType = IDATA_BUILTIN;  // Source type
 INPUT_GROUP("Meta MA Cross Shift strategy: Ichimoku indicator params");
-// INPUT ENUM_ICHIMOKU_LINE Meta_MA_Cross_Shift_Indi_Ichimoku_MA_Line = LINE_TENKANSEN; // Ichimoku line for MA
-INPUT int Meta_MA_Cross_Shift_Indi_Ichimoku_Period_Tenkan_Sen = 30;                         // Period Tenkan Sen
-INPUT int Meta_MA_Cross_Shift_Indi_Ichimoku_Period_Kijun_Sen = 10;                          // Period Kijun Sen
-INPUT int Meta_MA_Cross_Shift_Indi_Ichimoku_Period_Senkou_Span_B = 30;                      // Period Senkou Span B
-INPUT int Meta_MA_Cross_Shift_Indi_Ichimoku_Shift = 1;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_Ichimoku_Shift2 = 1;                                     // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_Ichimoku_SourceType = IDATA_BUILTIN;  // Source type
+// INPUT ENUM_ICHIMOKU_LINE Meta_MA_Cross_Indi_Ichimoku_MA_Line = LINE_TENKANSEN; // Ichimoku line for MA
+INPUT int Meta_MA_Cross_Indi_Ichimoku_Period_Tenkan_Sen = 30;                         // Period Tenkan Sen
+INPUT int Meta_MA_Cross_Indi_Ichimoku_Period_Kijun_Sen = 10;                          // Period Kijun Sen
+INPUT int Meta_MA_Cross_Indi_Ichimoku_Period_Senkou_Span_B = 30;                      // Period Senkou Span B
+INPUT int Meta_MA_Cross_Indi_Ichimoku_Shift = 1;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_Ichimoku_Shift2 = 1;                                     // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_Ichimoku_SourceType = IDATA_BUILTIN;  // Source type
 INPUT_GROUP("Meta MA Cross Shift strategy: MA indicator params");
-INPUT int Meta_MA_Cross_Shift_Indi_MA_Period = 26;                                    // Period
-INPUT int Meta_MA_Cross_Shift_Indi_MA_MA_Shift = 0;                                   // MA Shift
-INPUT ENUM_MA_METHOD Meta_MA_Cross_Shift_Indi_MA_Method = MODE_LWMA;                  // MA Method
-INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Shift_Indi_MA_Applied_Price = PRICE_WEIGHTED;  // Applied Price
-INPUT int Meta_MA_Cross_Shift_Indi_MA_Shift = 0;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_MA_Shift2 = 10;                                    // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_MA_SourceType = IDATA_BUILTIN;  // Source type
+INPUT int Meta_MA_Cross_Indi_MA_Period = 26;                                    // Period
+INPUT int Meta_MA_Cross_Indi_MA_MA_Shift = 0;                                   // MA Shift
+INPUT ENUM_MA_METHOD Meta_MA_Cross_Indi_MA_Method = MODE_LWMA;                  // MA Method
+INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Indi_MA_Applied_Price = PRICE_WEIGHTED;  // Applied Price
+INPUT int Meta_MA_Cross_Indi_MA_Shift = 0;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_MA_Shift2 = 10;                                    // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_MA_SourceType = IDATA_BUILTIN;  // Source type
 INPUT_GROUP("Meta MA Cross Shift strategy: Price Channel indicator params");
-INPUT int Meta_MA_Cross_Shift_Indi_PriceChannel_Period = 26;                                    // Period
-INPUT int Meta_MA_Cross_Shift_Indi_PriceChannel_Shift = 0;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_PriceChannel_Shift2 = 10;                                    // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_PriceChannel_SourceType = IDATA_ICUSTOM;  // Source type
+INPUT int Meta_MA_Cross_Indi_PriceChannel_Period = 26;                                    // Period
+INPUT int Meta_MA_Cross_Indi_PriceChannel_Shift = 0;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_PriceChannel_Shift2 = 10;                                    // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_PriceChannel_SourceType = IDATA_ICUSTOM;  // Source type
 INPUT_GROUP("Meta MA Cross Shift strategy: SAR indicator params");
-INPUT float Meta_MA_Cross_Shift_Indi_SAR_Step = 0.04f;                                 // Step
-INPUT float Meta_MA_Cross_Shift_Indi_SAR_Maximum_Stop = 0.4f;                          // Maximum stop
-INPUT int Meta_MA_Cross_Shift_Indi_SAR_Shift = 0;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_SAR_Shift2 = 10;                                    // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_SAR_SourceType = IDATA_ICUSTOM;  // Source type
+INPUT float Meta_MA_Cross_Indi_SAR_Step = 0.04f;                                 // Step
+INPUT float Meta_MA_Cross_Indi_SAR_Maximum_Stop = 0.4f;                          // Maximum stop
+INPUT int Meta_MA_Cross_Indi_SAR_Shift = 0;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_SAR_Shift2 = 10;                                    // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_SAR_SourceType = IDATA_ICUSTOM;  // Source type
 INPUT_GROUP("Meta MA Cross Shift strategy: TEMA indicator params");
-INPUT int Meta_MA_Cross_Shift_Indi_TEMA_Period = 10;                                    // Period
-INPUT int Meta_MA_Cross_Shift_Indi_TEMA_MA_Shift = 0;                                   // MA Shift
-INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Shift_Indi_TEMA_Applied_Price = PRICE_WEIGHTED;  // Applied Price
-INPUT int Meta_MA_Cross_Shift_Indi_TEMA_Shift = 0;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_TEMA_Shift2 = 10;                                    // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_TEMA_SourceType = IDATA_BUILTIN;  // Source type
+INPUT int Meta_MA_Cross_Indi_TEMA_Period = 10;                                    // Period
+INPUT int Meta_MA_Cross_Indi_TEMA_MA_Shift = 0;                                   // MA Shift
+INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Indi_TEMA_Applied_Price = PRICE_WEIGHTED;  // Applied Price
+INPUT int Meta_MA_Cross_Indi_TEMA_Shift = 0;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_TEMA_Shift2 = 10;                                    // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_TEMA_SourceType = IDATA_BUILTIN;  // Source type
 INPUT_GROUP("Meta MA Cross Shift strategy: VIDYA indicator params");
-INPUT int Meta_MA_Cross_Shift_Indi_VIDYA_Period = 30;                                    // Period
-INPUT int Meta_MA_Cross_Shift_Indi_VIDYA_MA_Period = 20;                                 // MA Period
-INPUT int Meta_MA_Cross_Shift_Indi_VIDYA_MA_Shift = 1;                                   // MA Shift
-INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Shift_Indi_VIDYA_Applied_Price = PRICE_WEIGHTED;  // Applied Price
-INPUT int Meta_MA_Cross_Shift_Indi_VIDYA_Shift = 0;                                      // Shift
-INPUT int Meta_MA_Cross_Shift_Indi_VIDYA_Shift2 = 10;                                    // Shift 2
-INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Shift_Indi_VIDYA_SourceType = IDATA_BUILTIN;  // Source type
+INPUT int Meta_MA_Cross_Indi_VIDYA_Period = 30;                                    // Period
+INPUT int Meta_MA_Cross_Indi_VIDYA_MA_Period = 20;                                 // MA Period
+INPUT int Meta_MA_Cross_Indi_VIDYA_MA_Shift = 1;                                   // MA Shift
+INPUT ENUM_APPLIED_PRICE Meta_MA_Cross_Indi_VIDYA_Applied_Price = PRICE_WEIGHTED;  // Applied Price
+INPUT int Meta_MA_Cross_Indi_VIDYA_Shift = 0;                                      // Shift
+INPUT int Meta_MA_Cross_Indi_VIDYA_Shift2 = 10;                                    // Shift 2
+INPUT ENUM_IDATA_SOURCE_TYPE Meta_MA_Cross_Indi_VIDYA_SourceType = IDATA_BUILTIN;  // Source type
 
 // Structs.
 // Defines struct with default user strategy values.
@@ -118,7 +118,7 @@ struct Stg_Meta_MA_Cross_Params_Defaults : StgParams {
                   ::Meta_MA_Cross_SignalOpenLevel, ::Meta_MA_Cross_SignalOpenBoostMethod,
                   ::Meta_MA_Cross_SignalCloseMethod, ::Meta_MA_Cross_SignalCloseSwitch,
                   ::Meta_MA_Cross_SignalCloseLevel, ::Meta_MA_Cross_PriceStopMethod, ::Meta_MA_Cross_PriceStopLevel,
-                  ::Meta_MA_Cross_TickSwitchMethod, ::Meta_MA_Cross_MaxSpread, ::Meta_MA_Cross_Shift) {
+                  ::Meta_MA_Cross_TickSwitchMethod, ::Meta_MA_Cross_MaxSpread, ::Meta_MA_Cross) {
     Set(STRAT_PARAM_LS, ::Meta_MA_Cross_LotSize);
     Set(STRAT_PARAM_OCL, ::Meta_MA_Cross_OrderCloseLoss);
     Set(STRAT_PARAM_OCP, ::Meta_MA_Cross_OrderCloseProfit);
@@ -164,128 +164,123 @@ class Stg_Meta_MA_Cross : public Strategy {
     switch (::Meta_MA_Cross_Type) {
       case STG_META_MA_CROSS_TYPE_AMA:  // AMA
       {
-        IndiAMAParams _indi_params(
-            ::Meta_MA_Cross_Shift_Indi_AMA_InpPeriodAMA, ::Meta_MA_Cross_Shift_Indi_AMA_InpFastPeriodEMA,
-            ::Meta_MA_Cross_Shift_Indi_AMA_InpSlowPeriodEMA, ::Meta_MA_Cross_Shift_Indi_AMA_InpShiftAMA, PRICE_TYPICAL,
-            ::Meta_MA_Cross_Shift_Indi_AMA_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_AMA_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+        IndiAMAParams _indi_params(::Meta_MA_Cross_Indi_AMA_InpPeriodAMA, ::Meta_MA_Cross_Indi_AMA_InpFastPeriodEMA,
+                                   ::Meta_MA_Cross_Indi_AMA_InpSlowPeriodEMA, ::Meta_MA_Cross_Indi_AMA_InpShiftAMA,
+                                   PRICE_TYPICAL, ::Meta_MA_Cross_Indi_AMA_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_AMA_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_AMA(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_AMA_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_AMA_Shift2);
         SetIndicator(new Indi_AMA(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_AMA_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_AMA_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_AMA_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_AMA_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_DEMA:  // DEMA
       {
-        IndiDEIndiMAParams _indi_params(
-            ::Meta_MA_Cross_Shift_Indi_DEMA_Period, ::Meta_MA_Cross_Shift_Indi_DEMA_MA_Shift,
-            ::Meta_MA_Cross_Shift_Indi_DEMA_Applied_Price, ::Meta_MA_Cross_Shift_Indi_DEMA_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_DEMA_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+        IndiDEIndiMAParams _indi_params(::Meta_MA_Cross_Indi_DEMA_Period, ::Meta_MA_Cross_Indi_DEMA_MA_Shift,
+                                        ::Meta_MA_Cross_Indi_DEMA_Applied_Price, ::Meta_MA_Cross_Indi_DEMA_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_DEMA_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_DEMA(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_DEMA_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_DEMA_Shift2);
         SetIndicator(new Indi_DEMA(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_DEMA_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_DEMA_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_DEMA_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_DEMA_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_FRAMA:  // FrAMA
       {
-        IndiFrAIndiMAParams _indi_params(
-            ::Meta_MA_Cross_Shift_Indi_FrAMA_Period, ::Meta_MA_Cross_Shift_Indi_FrAMA_MA_Shift,
-            ::Meta_MA_Cross_Shift_Indi_FrAMA_Applied_Price, ::Meta_MA_Cross_Shift_Indi_FrAMA_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_FrAMA_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+        IndiFrAIndiMAParams _indi_params(::Meta_MA_Cross_Indi_FrAMA_Period, ::Meta_MA_Cross_Indi_FrAMA_MA_Shift,
+                                         ::Meta_MA_Cross_Indi_FrAMA_Applied_Price, ::Meta_MA_Cross_Indi_FrAMA_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_FrAMA_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_FrAMA(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_FrAMA_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_FrAMA_Shift2);
         SetIndicator(new Indi_FrAMA(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_FrAMA_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_FrAMA_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_FrAMA_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_FrAMA_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_ICHIMOKU:  // Ichimoku
       {
         IndiIchimokuParams _indi_params(
-            ::Meta_MA_Cross_Shift_Indi_Ichimoku_Period_Tenkan_Sen, ::Meta_MA_Cross_Shift_Indi_Ichimoku_Period_Kijun_Sen,
-            ::Meta_MA_Cross_Shift_Indi_Ichimoku_Period_Senkou_Span_B, ::Meta_MA_Cross_Shift_Indi_Ichimoku_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_Ichimoku_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+            ::Meta_MA_Cross_Indi_Ichimoku_Period_Tenkan_Sen, ::Meta_MA_Cross_Indi_Ichimoku_Period_Kijun_Sen,
+            ::Meta_MA_Cross_Indi_Ichimoku_Period_Senkou_Span_B, ::Meta_MA_Cross_Indi_Ichimoku_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_Ichimoku_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_Ichimoku(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_Ichimoku_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_Ichimoku_Shift2);
         SetIndicator(new Indi_Ichimoku(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_Ichimoku_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_Ichimoku_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_Ichimoku_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_Ichimoku_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_MA:  // MA
       {
-        IndiMAParams _indi_params(::Meta_MA_Cross_Shift_Indi_MA_Period, ::Meta_MA_Cross_Shift_Indi_MA_MA_Shift,
-                                  ::Meta_MA_Cross_Shift_Indi_MA_Method, ::Meta_MA_Cross_Shift_Indi_MA_Applied_Price,
-                                  ::Meta_MA_Cross_Shift_Indi_MA_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_MA_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+        IndiMAParams _indi_params(::Meta_MA_Cross_Indi_MA_Period, ::Meta_MA_Cross_Indi_MA_MA_Shift,
+                                  ::Meta_MA_Cross_Indi_MA_Method, ::Meta_MA_Cross_Indi_MA_Applied_Price,
+                                  ::Meta_MA_Cross_Indi_MA_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_MA_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_MA(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_MA_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_MA_Shift2);
         SetIndicator(new Indi_MA(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_MA_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_MA_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_MA_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_MA_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_PRICE_CHANNEL:  // Price Channel
       {
-        IndiPriceChannelParams _indi_params(::Meta_MA_Cross_Shift_Indi_PriceChannel_Period,
-                                            ::Meta_MA_Cross_Shift_Indi_PriceChannel_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_PriceChannel_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+        IndiPriceChannelParams _indi_params(::Meta_MA_Cross_Indi_PriceChannel_Period,
+                                            ::Meta_MA_Cross_Indi_PriceChannel_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_PriceChannel_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_PriceChannel(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_PriceChannel_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_PriceChannel_Shift2);
         SetIndicator(new Indi_PriceChannel(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_PriceChannel_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_PriceChannel_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_PriceChannel_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_PriceChannel_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_SAR:  // SAR
       {
-        IndiSARParams _indi_params(::Meta_MA_Cross_Shift_Indi_SAR_Step, ::Meta_MA_Cross_Shift_Indi_SAR_Maximum_Stop,
-                                   ::Meta_MA_Cross_Shift_Indi_SAR_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_SAR_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+        IndiSARParams _indi_params(::Meta_MA_Cross_Indi_SAR_Step, ::Meta_MA_Cross_Indi_SAR_Maximum_Stop,
+                                   ::Meta_MA_Cross_Indi_SAR_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_SAR_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_SAR(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_SAR_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_SAR_Shift2);
         SetIndicator(new Indi_SAR(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_SAR_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_SAR_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_SAR_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_SAR_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_TEMA:  // TEMA
       {
-        IndiTEMAParams _indi_params(::Meta_MA_Cross_Shift_Indi_TEMA_Period, ::Meta_MA_Cross_Shift_Indi_TEMA_MA_Shift,
-                                    ::Meta_MA_Cross_Shift_Indi_TEMA_Applied_Price,
-                                    ::Meta_MA_Cross_Shift_Indi_TEMA_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_TEMA_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+        IndiTEMAParams _indi_params(::Meta_MA_Cross_Indi_TEMA_Period, ::Meta_MA_Cross_Indi_TEMA_MA_Shift,
+                                    ::Meta_MA_Cross_Indi_TEMA_Applied_Price, ::Meta_MA_Cross_Indi_TEMA_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_TEMA_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_TEMA(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_TEMA_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_TEMA_Shift2);
         SetIndicator(new Indi_TEMA(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_TEMA_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_TEMA_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_TEMA_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_TEMA_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_VIDYA:  // VIDYA
       {
-        IndiVIDYAParams _indi_params(
-            ::Meta_MA_Cross_Shift_Indi_VIDYA_Period, ::Meta_MA_Cross_Shift_Indi_VIDYA_MA_Period,
-            ::Meta_MA_Cross_Shift_Indi_VIDYA_MA_Shift, ::Meta_MA_Cross_Shift_Indi_VIDYA_Applied_Price,
-            ::Meta_MA_Cross_Shift_Indi_VIDYA_Shift);
-        _indi_params.SetDataSourceType(::Meta_MA_Cross_Shift_Indi_VIDYA_SourceType);
-        _indi_params.SetTf(Get<ENUM_TIMEFRAMES>(STRAT_PARAM_TF));
+        IndiVIDYAParams _indi_params(::Meta_MA_Cross_Indi_VIDYA_Period, ::Meta_MA_Cross_Indi_VIDYA_MA_Period,
+                                     ::Meta_MA_Cross_Indi_VIDYA_MA_Shift, ::Meta_MA_Cross_Indi_VIDYA_Applied_Price,
+                                     ::Meta_MA_Cross_Indi_VIDYA_Shift);
+        _indi_params.SetDataSourceType(::Meta_MA_Cross_Indi_VIDYA_SourceType);
+        _indi_params.SetTf(::Meta_MA_Cross_Tf);
         SetIndicator(new Indi_VIDYA(_indi_params), ::Meta_MA_Cross_Type);
-        _indi_params.SetShift(::Meta_MA_Cross_Shift_Indi_VIDYA_Shift2);
+        _indi_params.SetShift(::Meta_MA_Cross_Indi_VIDYA_Shift2);
         SetIndicator(new Indi_VIDYA(_indi_params), ::Meta_MA_Cross_Type + 1);
-        ssparams.SetShift1(::Meta_MA_Cross_Shift_Indi_VIDYA_Shift);
-        ssparams.SetShift2(::Meta_MA_Cross_Shift_Indi_VIDYA_Shift2);
+        ssparams.SetShift1(::Meta_MA_Cross_Indi_VIDYA_Shift);
+        ssparams.SetShift2(::Meta_MA_Cross_Indi_VIDYA_Shift2);
         break;
       }
       case STG_META_MA_CROSS_TYPE_0_NONE:  // (None)
@@ -502,20 +497,16 @@ class Stg_Meta_MA_Cross : public Strategy {
    * Gets strategy.
    */
   Ref<Strategy> GetStrategy(uint _shift = 0) {
-    IndicatorBase *_indi = GetIndicator(::Meta_MA_Cross_Type);
-    Chart *_chart = (Chart *)_indi;
-    uint _ishift = _shift;  // @fixme
-    bool _result = true;
-    // bool _result = _indi.GetFlag(INDI_ENTRY_FLAG_IS_VALID, _ishift) && _indi.GetFlag(INDI_ENTRY_FLAG_IS_VALID,
-    // _ishift + 3);
-    Ref<Strategy> _strat_ref;
-    if (!_result) {
-      // Returns false when indicator data is not valid.
-      return _strat_ref;
-    }
-    if (_indi.IsDecreasing(1, 0, _ishift)) {
-      _strat_ref = strats.GetByKey(0);
-    } else if (_indi.IsIncreasing(1, 0, _ishift)) {
+    IndicatorBase *_indi1 = GetIndicator(::Meta_MA_Cross_Type);
+    IndicatorBase *_indi2 = GetIndicator(::Meta_MA_Cross_Type + 1);
+    uint _ishift1 = ssparams.GetShift1();
+    uint _ishift2 = ssparams.GetShift2();
+    bool _is_cross = true;
+    _is_cross &= _indi1[_ishift1][0] > _indi2[_ishift2][0];
+    _is_cross &= _indi1[_ishift1 + 1][0] < _indi2[_ishift2 + 1][0];
+    Ref<Strategy> _strat_ref = strats.GetByKey(0);
+    if (_is_cross) {
+      // Returns different strategy on MA crossing.
       _strat_ref = strats.GetByKey(1);
     }
     return _strat_ref;
@@ -537,7 +528,6 @@ class Stg_Meta_MA_Cross : public Strategy {
       // Returns false when strategy is not set.
       return false;
     }
-
     _level = _level == 0.0f ? _strat_ref.Ptr().Get<float>(STRAT_PARAM_SOL) : _level;
     _method = _strat_ref.Ptr().Get<int>(STRAT_PARAM_SOM);
     //_shift = _shift == 0 ? _strat_ref.Ptr().Get<int>(STRAT_PARAM_SHIFT) : _shift;
