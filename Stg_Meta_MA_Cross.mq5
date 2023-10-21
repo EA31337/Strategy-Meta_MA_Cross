@@ -32,7 +32,7 @@ input ENUM_LOG_LEVEL Log_Level = V_INFO;  // Log level.
 input bool Info_On_Chart = true;          // Display info on chart.
 
 // Includes strategy class.
-#include "Stg_Meta_Oscillator_Switch.mqh"
+#include "Stg_Meta_MA_Cross.mqh"
 
 // Defines.
 #define ea_name "Strategy Meta Oscillator Switch"
