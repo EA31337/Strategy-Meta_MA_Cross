@@ -6,8 +6,8 @@
 
 /**
  * @file
- * Implements Oscillator Switch meta strategy.
+ * Implements MA Cross meta strategy.
  */
 
 // Includes the main code.
-#include "Stg_Meta_Oscillator_Switch.mq5"
+#include "Stg_Meta_MA_Cross.mq5"
