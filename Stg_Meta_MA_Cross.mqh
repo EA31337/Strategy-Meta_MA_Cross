@@ -362,7 +362,7 @@ class Stg_Meta_MA_Cross : public Strategy {
    * Check strategy's opening signal.
    */
   bool SignalOpen(ENUM_ORDER_TYPE _cmd, int _method, float _level = 0.0f, int _shift = 0) {
-    bool _result = ::Meta_MA_Cross_Type != STG_META_MA_CROSS_TYPE_0_NONE;  // && IsValidEntry(_indi, _shift);
+    bool _result = true;  // && IsValidEntry(_indi, _shift);
     Ref<Strategy> _strat_ref = GetStrategy(_shift);
     if (!_strat_ref.IsSet()) {
       // Returns false when strategy is not set.
