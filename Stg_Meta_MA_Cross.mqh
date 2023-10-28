@@ -315,12 +315,16 @@ class Stg_Meta_MA_Cross : public Strategy {
   Ref<Strategy> GetStrategy(uint _shift = 0) {
     IndicatorBase *_indi1 = GetIndicator(::Meta_MA_Cross_Type);
     IndicatorBase *_indi2 = GetIndicator(::Meta_MA_Cross_Type + 1);
+    Ref<Strategy> _strat_ref = strats.GetByKey(0);
+    if (_indi1 == NULL || _indi2 == NULL) {
+      // Returns default strategy when indicators are not set.
+      return _strat_ref;
+    }
     uint _ishift1 = ssparams.GetShift1();
     uint _ishift2 = ssparams.GetShift2();
     bool _is_cross = true;
     _is_cross &= _indi1[_ishift1][0] > _indi2[_ishift2][0];
     _is_cross &= _indi1[_ishift1 + 1][0] < _indi2[_ishift2 + 1][0];
-    Ref<Strategy> _strat_ref = strats.GetByKey(0);
     if (_is_cross) {
       // Returns different strategy on MA crossing.
       _strat_ref = strats.GetByKey(1);
