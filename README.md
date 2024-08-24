@@ -13,7 +13,7 @@ Meta MA Cross strategy to switch strategies based on MA crossing.
 
 | Tag      | Framework | Strategies |
 |:--------:|:---------:|:----------:|
-| v2.000   | v3.000.1  | v2.000     |
+| v2.000   | v3.000.2  | v2.000     |
 
 <!-- Named links -->
 
